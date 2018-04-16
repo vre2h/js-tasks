@@ -1,0 +1,30 @@
+{
+  "name": "js-boilerplate",
+  "version": "1.0.0",
+  "description": "js boilerplate for projects",
+  "main": "index.js",
+  "scripts": {
+    "babel": "babel",
+    "build": "NODE_ENV=production babel src --out-dir dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vre2h/js-boilerplate.git"
+  },
+  "keywords": [
+    "js",
+    "boilerplate"
+  ],
+  "author": "Oganisyan Vrezh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vre2h/js-boilerplate/issues"
+  },
+  "homepage": "https://github.com/vre2h/js-boilerplate#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-stage-0": "^6.24.1"
+  }
+}
