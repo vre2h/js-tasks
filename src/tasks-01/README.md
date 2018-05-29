@@ -1,0 +1,15 @@
+> Detailed task descriptions you can find in the links below.
+
+- [Fibonacci](fibon.js)
+- [No Zero](noZero.js)
+- [Number Pattern](numPattern.js)
+- [Changer](changer.js)
+- [Frequency](frequency.js)
+- [MinMaxChecker](minMaxChecker.js)
+- [Mirror](mirror.js)
+- [Neighbours](neighbours.js)
+- [Sequence](sequence.js)
+- [Split](split.js)
+- [Two digit](twoDig.js)
+- [Unique](unique.js)
+- [Validation](validation.js)
