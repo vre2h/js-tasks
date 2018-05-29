@@ -17,6 +17,7 @@ const numPattern = (num) => {
     res += index;
     console.log(res);
   }
+
   for (let index = num - 1; index > 0; index -= 1) {
     res = res.substr(0, index);
     console.log(res);
