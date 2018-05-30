@@ -1,0 +1,1 @@
+const isRegExp = regex => Object.prototype.toString.call(regex) === '[object RegExp]';
