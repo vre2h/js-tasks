@@ -5,4 +5,5 @@
 > Follow bellow links to get task-descriptions and solutions.
 
 ### Tasks:
-- [tasks-01](src/tasks-01) - [for beginners]
+- [task-01](src/task-01) - [for beginners]
+- [task-02](src/task-02)
