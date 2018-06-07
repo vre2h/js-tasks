@@ -1,16 +1,20 @@
 const equals = (obj1, obj2) => {
-  if (typeof obj1 !== 'object' && obj2 !== 'object') return obj1 === obj2;
+  const props1 = Object.keys(obj1);
+  const props2 = Object.keys(obj2);
 
-  obj1Props = Object.getOwnPropertyNames(obj1);
-  obj2Props = Object.getOwnPropertyNames(obj2);
-  
-  if (obj1Props.length !== obj2Props.length) return false;
-
-  for (const item in obj1Props) {
-    if (obj1Props[item] !== obj2Props[item]) return false;
+  if (props1.length !== props2.length) {
+    return false;
   }
 
-  return true;
+  if (typeof obj1 !== 'object' && typeof obj2 !== 'object') {
+    return obj1 === obj2;
+  }
+  return Object.keys(obj1).every((item) => {
+    if (typeof obj1[item] === 'object' && typeof obj2[item] === 'object') {
+      return equals(obj1[item], obj2[item]);
+    }
+    return obj1[item] === obj2[item];
+  });
 };
 
-exports.equals = equals;
+export default equals;
